@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  encoding: unicode
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/prophet_dev
+
+test:
+  <<: *default
+  database: db/prophet_test
+
+production:
+  <<: *default
+  database: db/prophet_prod
