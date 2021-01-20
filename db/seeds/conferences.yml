@@ -1,0 +1,96 @@
+- name: America East Conference
+  nickname: America East
+  abbreviation: AEC
+- name: American Athletic Conference
+  nickname: American
+  abbreviation: AAC
+- name: Atlantic Sun Conference
+  nickname: ASUN
+  abbreviation: ASUN
+- name: Atlantic 10 Conference
+  nickname: A-10
+  abbreviation: A10
+- name: Atlantic Coast Conference
+  nickname: ACC
+  abbreviation: ACC
+- name: Big 12 Conference
+  nickname: Big 12
+  abbreviation: B12
+- name: Big East Conference
+  nickname: Big East
+  abbreviation: BE
+- name: Big Sky Conference
+  nickname: Big Sky
+  abbreviation: BSKY
+- name: Big South Conference
+  nickname: Big South
+  abbreviation: BSOU
+- name: Big Ten Conference
+  nickname: Big Ten
+  abbreviation: B1G
+- name: Big West Conference
+  nickname: Big West
+  abbreviation: BWC
+- name: Colonial Athletic Association
+  nickname: Colonial
+  abbreviation: CAA
+- name: Conference USA
+  nickname: C-USA
+  abbreviation: CUSA
+- name: Horizon League
+  nickname: Horizon
+  abbreviation: HL
+- name: Ivy League
+  nickname: Ivy League
+  abbreviation: IVY
+- name: Metro Atlantic Athletic Conference
+  nickname: MAAC
+  abbreviation: MAAC
+- name: Mid-American Conference
+  nickname: MAC
+  abbreviation: MAC
+- name: Mid-Eastern Athletic Conference
+  nickname: MEAC
+  abbreviation: MEAC
+- name: Missouri Valley Conference
+  nickname: Missouri Valley
+  abbreviation: MVC
+- name: Mountain West Conference
+  nickname: Mountain West
+  abbreviation: MW
+- name: Northeast Conference
+  nickname: Northeast
+  abbreviation: NEC
+- name: Ohio Valley Conference
+  nickname: Ohio Valley
+  abbreviation: OVC
+- name: Pac-12 Conference
+  nickname: Pac-12
+  abbreviation: P12
+- name: Patriot League
+  nickname: Patriot
+  abbreviation: PAT
+- name: Southeastern Conference
+  nickname: SEC
+  abbreviation: SEC
+- name: Southern Conference
+  nickname: SoCon
+  abbreviation: SOC
+- name: Southland Conference
+  nickname: Southland
+  abbreviation: SLC
+- name: Southwestern Athletic Conference
+  nickname: SWAC
+  abbreviation: SWAC
+- name: Summit League
+  nickname: The Summit
+  abbreviation: SUM
+- name: Sun Belt Conference
+  nickname: Sun Belt
+  abbreviation: SUN
+- name: West Coast Conference
+  nickname: West Coast
+  abbreviation: WCC
+- name: Western Athletic Conference
+  nickname: WAC
+  abbreviation: WAC

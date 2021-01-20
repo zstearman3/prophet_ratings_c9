@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_20_171244) do
+ActiveRecord::Schema.define(version: 2021_01_20_185802) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "conferences", force: :cascade do |t|
+    t.string "name"
+    t.string "nickname"
+    t.string "abbreviation"
+    t.string "logo_url"
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
+  end
 
   create_table "states", force: :cascade do |t|
     t.string "name"
