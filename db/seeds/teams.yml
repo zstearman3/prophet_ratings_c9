@@ -1,0 +1,30 @@
+- school: Bellarmine
+  nickname: Knights
+  abbreviation: BELL
+  primary_color: 752936
+  secondary_color: C8C8C8
+  city: Louisville
+  state: KY
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/91/bellarmine-knights
+  espn_id: 91
+- school: Florida Gulf Coast
+  nickname: Eagles
+  abbreviation: FGCU
+  primary_color: 00794C
+  secondary_color: 004785
+  city: Fort Myers
+  state: FL
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/526/florida-gulf-coast-eagles
+  espn_id: 526
+- school: Jacksonville
+  nickname: Dolphins
+  abbreviation: JACK
+  primary_color: 004E44
+  secondary_color: 898A8D
+  city: Jacksonville
+  state: FL
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/294/jacksonville-dolphins
+  espn_id: 294

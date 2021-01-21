@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_20_185802) do
+ActiveRecord::Schema.define(version: 2021_01_20_223046) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,25 @@ ActiveRecord::Schema.define(version: 2021_01_20_185802) do
     t.string "abbreviation"
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string "school", null: false
+    t.string "nickname", null: false
+    t.string "abbreviation", null: false
+    t.string "primary_color"
+    t.string "secondary_color"
+    t.string "city"
+    t.integer "state_id"
+    t.integer "conference_id"
+    t.string "espn_url"
+    t.string "logo_url"
+    t.integer "espn_id", null: false
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
+    t.index ["conference_id"], name: "index_teams_on_conference_id"
+    t.index ["school"], name: "index_teams_on_school", unique: true
+    t.index ["state_id"], name: "index_teams_on_state_id"
   end
 
   create_table "users", force: :cascade do |t|
