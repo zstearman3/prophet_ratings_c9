@@ -28,3 +28,63 @@
   conference: ASUN
   espn_url: https://www.espn.com/mens-college-basketball/team/_/id/294/jacksonville-dolphins
   espn_id: 294
+- school: Kennesaw State
+  nickname: Owls
+  abbreviation: KENN
+  primary_color: FDBB30
+  secondary_color: 0B1315
+  city: Kennesaw
+  state: GA
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/338/kennesaw-state-owls
+  espn_id: 338
+- school: Liberty
+  nickname: Flames
+  abbreviation: LU
+  primary_color: 002D62
+  secondary_color: C41230
+  city: Lynchburg
+  state: VA
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2335/liberty-flames
+  espn_id: 2335
+- school: Lipscomb
+  nickname: Bisons
+  abbreviation: LIP
+  primary_color: 331E54
+  secondary_color: F4AA00
+  city: Nashville
+  state: TN
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/288/lipscomb-bisons
+  espn_id: 288
+- school: North Alabama
+  nickname: Lions
+  abbreviation: UNA
+  primary_color: 46166B
+  secondary_color: DB9F11
+  city: Florence
+  state: AL
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2453/north-alabama-lions
+  espn_id: 2453
+- school: North Florida
+  nickname: Ospreys
+  abbreviation: UNF
+  primary_color: 00246B
+  secondary_color: D9D9D9
+  city: Jacksonville
+  state: FL
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2454/north-florida-ospreys
+  espn_id: 2454
+- school: Stetson
+  nickname: Hatters
+  abbreviation: STET
+  primary_color: 006747
+  secondary_color: B58150
+  city: DeLand
+  state: FL
+  conference: ASUN
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/56/stetson-hatters
+  espn_id: 56

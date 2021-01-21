@@ -23,9 +23,7 @@ teams.each do |t|
   team.update(t.except('state', 'conference'))
   team.state = State.find_by(abbreviation: t['state'])
   team.conference = Conference.find_by(abbreviation: t['conference'])
-  team.errors.full_messages.each do |message|
-    puts message
-  end
+  raise("Error in #{team.school} record: #{team.errors.full_messages}") unless team.valid?
   team_count += 1 if team.save
 end
 
