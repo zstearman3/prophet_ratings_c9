@@ -1,21 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import ProphetLogo from 'images/prophet_logo.png'
-class HelloWorld extends React.Component {
+
+class Header extends React.Component {
   render () {
     return (
       <div className="header">
         <img src={ProphetLogo} />
         <h1>
-          Greeting: {this.props.greeting}
+          Logged in?: {this.props.logged_in}
         </h1>
       </div>
     );
   }
 }
 
-HelloWorld.propTypes = {
-  greeting: PropTypes.string
+Header.propTypes = {
+  logged_in: PropTypes.string
 };
 
-export default HelloWorld
+export default Header

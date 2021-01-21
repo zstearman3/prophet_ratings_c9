@@ -1,1 +1,3 @@
-<%= react_component("common/header", { greeting: "Hello from react-rails." }) %>
+<% logged_in_string = user_signed_in? ? "true" : "false" %>
+<%= react_component("common/header", { logged_in: logged_in_string }) %>
+<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
