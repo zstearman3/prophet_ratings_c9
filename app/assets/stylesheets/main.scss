@@ -1,3 +1,22 @@
+/** PAGE HEADER **/
+
 .navbar{
   background-color: #080d5e;
+  .navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    a{
+      color: #fff;
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+  .navbar-toggler{
+    border: 1px solid #fff;
+    .navbar-toggler-icon{
+      background-color: white;
+    }
+  }
 }
