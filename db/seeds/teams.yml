@@ -81,10 +81,110 @@
 - school: Stetson
   nickname: Hatters
   abbreviation: STET
-  primary_color: 006747
+  primary_color: 00674A
   secondary_color: B58150
   city: DeLand
   state: FL
   conference: ASUN
   espn_url: https://www.espn.com/mens-college-basketball/team/_/id/56/stetson-hatters
   espn_id: 56
+- school: Albany
+  nickname: Great Danes
+  abbreviation: ALB
+  primary_color: 461660
+  secondary_color: EEB211
+  city: Albany
+  state: NY
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/399/albany-great-danes
+  espn_id: 399
+- school: Binghamton
+  nickname: Bearcats
+  abbreviation: BING
+  primary_color: 005A43
+  secondary_color: B1B3B3
+  city: Binghamton
+  state: NY
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2066/binghamton-bearcats
+  espn_id: 2066
+- school: Hartford
+  nickname: Hawks
+  abbreviation: HART
+  primary_color: C02427
+  secondary_color: 0F0708
+  city: West Hartford
+  state: CT
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/42/hartford-hawks
+  espn_id: 42
+- school: Maine
+  nickname: Black Bears
+  abbreviation: ME
+  primary_color: 00326A
+  secondary_color: B0D7FF
+  city: Orono
+  state: ME
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/311/maine-black-bears
+  espn_id: 311
+- school: NJIT
+  nickname: Highlanders
+  abbreviation: NJIT
+  primary_color: D22630
+  secondary_color: 071D49
+  city: Newark
+  state: NJ
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2885/njit-highlanders
+  espn_id: 2885
+- school: New Hampshire
+  nickname: Wildcats
+  abbreviation: UNH
+  primary_color: 003A91
+  secondary_color: BBBCBC
+  city: Durham
+  state: NH
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/160/new-hampshire-wildcats
+  espn_id: 160
+- school: Stony Brook
+  nickname: Seawolves
+  abbreviation: STBK
+  primary_color: 990000
+  secondary_color: 4B4B4B
+  city: Stony Brook
+  state: NY
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2619/stony-brook-seawolves
+  espn_id: 2619
+- school: UMBC
+  nickname: Retrievers
+  abbreviation: UMBC
+  primary_color: FFC20E
+  secondary_color: 000000
+  city: Baltimore
+  state: MD
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2378/umbc-retrievers
+  espn_id: 2378
+- school: UMass Lowell
+  nickname: River Hawks
+  abbreviation: UML
+  primary_color: 003DA5
+  secondary_color: C8102E
+  city: Lowell
+  state: MA
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2349/umass-lowell-river-hawks
+  espn_id: 2349
+- school: Vermont
+  nickname: Catamounts
+  abbreviation: UVM
+  primary_color: 00715A
+  secondary_color: FFC72C
+  city: Burlington
+  state: VA
+  conference: AEC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/261/vermont-catamounts
+  espn_id: 261

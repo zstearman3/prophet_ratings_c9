@@ -1,5 +1,5 @@
 <% @teams.all.each do |team| %>
-  <p><%= team.school %></p>
+  <p style=<%= "color:##{team.primary_color}" %>><%= team.school %></p>
 <% end %>
 
 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
