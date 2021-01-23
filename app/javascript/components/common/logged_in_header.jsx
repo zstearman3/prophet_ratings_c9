@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import ProphetLogo from 'images/prophet_logo_white.png'
 
 function NavLink(props) {
@@ -10,7 +11,15 @@ function NavLink(props) {
 }
 
 class Header extends React.Component {
+  debugger
   render () {
+    const isLoggedIn = this.props.signed_in;
+    let navLinks;
+    if (isLoggedIn) {
+      navLinks = <NavLink title="Teams" url="/teams" />;
+    } else {
+      navLinks = <NavLink title="Login" url="/login" />;
+    }
     return (
       <nav className="navbar navbar-expand-lg">
         <a className="navbar-brand" href="/">
@@ -21,12 +30,16 @@ class Header extends React.Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <NavLink title="Teams" url="/teams" />
+            { navLinks }
           </ul>
         </div>
       </nav>
     );
   }
+}
+
+Header.propTypes = {
+  signed_in: PropTypes.bool
 }
 
 export default Header

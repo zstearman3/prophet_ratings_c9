@@ -1,3 +1,1 @@
-<% if user_signed_in? %>
-  <%= react_component("common/logged_in_header") %>
-<% end %>
+<%= react_component("common/logged_in_header", { signed_in: user_signed_in? }) %>
