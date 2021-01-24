@@ -1,8 +1,8 @@
 - school: Bellarmine
   nickname: Knights
   abbreviation: BELL
-  primary_color: 752936
-  secondary_color: C8C8C8
+  primary_color: "#752936"
+  secondary_color: "#C8C8C8"
   city: Louisville
   state: KY
   conference: ASUN
@@ -11,8 +11,8 @@
 - school: Florida Gulf Coast
   nickname: Eagles
   abbreviation: FGCU
-  primary_color: 00794C
-  secondary_color: 004785
+  primary_color: "#00794C"
+  secondary_color: "#004785"
   city: Fort Myers
   state: FL
   conference: ASUN
@@ -21,8 +21,8 @@
 - school: Jacksonville
   nickname: Dolphins
   abbreviation: JACK
-  primary_color: 004E44
-  secondary_color: 898A8D
+  primary_color: "#004E44"
+  secondary_color: "#898A8D"
   city: Jacksonville
   state: FL
   conference: ASUN
@@ -31,8 +31,8 @@
 - school: Kennesaw State
   nickname: Owls
   abbreviation: KENN
-  primary_color: FDBB30
-  secondary_color: 0B1315
+  primary_color: "#FDBB30"
+  secondary_color: "#0B1315"
   city: Kennesaw
   state: GA
   conference: ASUN
@@ -41,8 +41,8 @@
 - school: Liberty
   nickname: Flames
   abbreviation: LU
-  primary_color: 002D62
-  secondary_color: C41230
+  primary_color: "#002D62"
+  secondary_color: "#C41230"
   city: Lynchburg
   state: VA
   conference: ASUN
@@ -51,8 +51,8 @@
 - school: Lipscomb
   nickname: Bisons
   abbreviation: LIP
-  primary_color: 331E54
-  secondary_color: F4AA00
+  primary_color: "#331E54"
+  secondary_color: "#F4AA00"
   city: Nashville
   state: TN
   conference: ASUN
@@ -61,8 +61,8 @@
 - school: North Alabama
   nickname: Lions
   abbreviation: UNA
-  primary_color: 46166B
-  secondary_color: DB9F11
+  primary_color: "#46166B"
+  secondary_color: "#DB9F11"
   city: Florence
   state: AL
   conference: ASUN
@@ -71,8 +71,8 @@
 - school: North Florida
   nickname: Ospreys
   abbreviation: UNF
-  primary_color: 00246B
-  secondary_color: D9D9D9
+  primary_color: "#00246B"
+  secondary_color: "#D9D9D9"
   city: Jacksonville
   state: FL
   conference: ASUN
@@ -81,8 +81,8 @@
 - school: Stetson
   nickname: Hatters
   abbreviation: STET
-  primary_color: 00674A
-  secondary_color: B58150
+  primary_color: "#00674A"
+  secondary_color: "#B58150"
   city: DeLand
   state: FL
   conference: ASUN
@@ -91,8 +91,8 @@
 - school: Albany
   nickname: Great Danes
   abbreviation: ALB
-  primary_color: 461660
-  secondary_color: EEB211
+  primary_color: "#461660"
+  secondary_color: "#EEB211"
   city: Albany
   state: NY
   conference: AEC
@@ -101,8 +101,8 @@
 - school: Binghamton
   nickname: Bearcats
   abbreviation: BING
-  primary_color: 005A43
-  secondary_color: B1B3B3
+  primary_color: "#005A43"
+  secondary_color: "#B1B3B3"
   city: Binghamton
   state: NY
   conference: AEC
@@ -111,8 +111,8 @@
 - school: Hartford
   nickname: Hawks
   abbreviation: HART
-  primary_color: C02427
-  secondary_color: 0F0708
+  primary_color: "#C02427"
+  secondary_color: "#0F0708"
   city: West Hartford
   state: CT
   conference: AEC
@@ -121,8 +121,8 @@
 - school: Maine
   nickname: Black Bears
   abbreviation: ME
-  primary_color: 00326A
-  secondary_color: B0D7FF
+  primary_color: "#00326A"
+  secondary_color: "#B0D7FF"
   city: Orono
   state: ME
   conference: AEC
@@ -131,8 +131,8 @@
 - school: NJIT
   nickname: Highlanders
   abbreviation: NJIT
-  primary_color: D22630
-  secondary_color: 071D49
+  primary_color: "#D22630"
+  secondary_color: "#071D49"
   city: Newark
   state: NJ
   conference: AEC
@@ -141,8 +141,8 @@
 - school: New Hampshire
   nickname: Wildcats
   abbreviation: UNH
-  primary_color: 003A91
-  secondary_color: BBBCBC
+  primary_color: "#003A91"
+  secondary_color: "#BBBCBC"
   city: Durham
   state: NH
   conference: AEC
@@ -151,8 +151,8 @@
 - school: Stony Brook
   nickname: Seawolves
   abbreviation: STBK
-  primary_color: 990000
-  secondary_color: 4B4B4B
+  primary_color: "#990000"
+  secondary_color: "#4B4B4B"
   city: Stony Brook
   state: NY
   conference: AEC
@@ -161,8 +161,8 @@
 - school: UMBC
   nickname: Retrievers
   abbreviation: UMBC
-  primary_color: FFC20E
-  secondary_color: 000000
+  primary_color: "#FFC20E"
+  secondary_color: "#000000"
   city: Baltimore
   state: MD
   conference: AEC
@@ -171,8 +171,8 @@
 - school: UMass Lowell
   nickname: River Hawks
   abbreviation: UML
-  primary_color: 003DA5
-  secondary_color: C8102E
+  primary_color: "#003DA5"
+  secondary_color: "#C8102E"
   city: Lowell
   state: MA
   conference: AEC
@@ -181,8 +181,8 @@
 - school: Vermont
   nickname: Catamounts
   abbreviation: UVM
-  primary_color: 00715A
-  secondary_color: FFC72C
+  primary_color: "#00715A"
+  secondary_color: "#FFC72C"
   city: Burlington
   state: VA
   conference: AEC
