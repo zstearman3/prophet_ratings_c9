@@ -1,3 +1,17 @@
+klasses = [
+  ["Freshman", "FR"],
+  ["Sophomore", "SO"],
+  ["Junior", "JR"],
+  ["Senior", "SR"],
+]
+
+klasses.each do |klass|
+  new_klass = Klass.find_or_create_by(abbreviation: klass[1])
+  new_klass.name = klass[0]
+  new_klass.save
+end
+puts "There are #{Klass.count} klasses in the database."
+
 states_file = Rails.root.join('db', 'seeds', 'states.yml')
 states = YAML::load_file(states_file)
 
