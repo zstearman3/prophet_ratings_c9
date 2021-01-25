@@ -11,6 +11,8 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
       t.string :birthplace
       t.integer :team_id, null: false
       t.integer :klass_id
+      t.integer :espn_id
+      t.string :espn_url
 
       t.timestamps null: true
     end
@@ -18,6 +20,7 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
     add_index :players, :team_id
     add_index :players, :klass_id
     add_index :players, :position_id
+    add_index :players, :espn_id
   end
 
   def down

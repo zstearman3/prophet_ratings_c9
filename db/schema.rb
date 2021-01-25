@@ -42,8 +42,11 @@ ActiveRecord::Schema.define(version: 2021_01_25_174335) do
     t.string "birthplace"
     t.integer "team_id", null: false
     t.integer "klass_id"
+    t.integer "espn_id"
+    t.string "espn_url"
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+    t.index ["espn_id"], name: "index_players_on_espn_id"
     t.index ["klass_id"], name: "index_players_on_klass_id"
     t.index ["position_id"], name: "index_players_on_position_id"
     t.index ["team_id"], name: "index_players_on_team_id"
