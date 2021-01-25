@@ -1,8 +1,16 @@
 klasses = [
-  ["Freshman", "FR"],
-  ["Sophomore", "SO"],
-  ["Junior", "JR"],
-  ["Senior", "SR"],
+  ["freshman", "FR"],
+  ["sophomore", "SO"],
+  ["junior", "JR"],
+  ["senior", "SR"],
+]
+
+positions = [
+ ["guard", "G"],
+ ["forward", "F"],
+ ["center", "C"],
+ ["wing", "G/F"],
+ ["big", "F/C"],
 ]
 
 klasses.each do |klass|
@@ -11,6 +19,13 @@ klasses.each do |klass|
   new_klass.save
 end
 puts "There are #{Klass.count} klasses in the database."
+
+positions.each do |position|
+  new_klass = Position.find_or_create_by(abbreviation: position[1])
+  new_klass.name = position[0]
+  new_klass.save
+end
+puts "There are #{Position.count} positions in the database."
 
 states_file = Rails.root.join('db', 'seeds', 'states.yml')
 states = YAML::load_file(states_file)

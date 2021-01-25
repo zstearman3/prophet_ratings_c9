@@ -4,6 +4,8 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
       t.string :first_name, null: false
       t.string :last_name, null: false
       t.boolean :active, default: true
+      t.integer :jersey_number
+      t.integer :position_id
       t.integer :height
       t.integer :weight
       t.string :birthplace
@@ -15,6 +17,7 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
 
     add_index :players, :team_id
     add_index :players, :klass_id
+    add_index :players, :position_id
   end
 
   def down
