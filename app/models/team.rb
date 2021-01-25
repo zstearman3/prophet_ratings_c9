@@ -5,4 +5,8 @@ class Team < ApplicationRecord
 
   belongs_to :state
   belongs_to :conference
+
+  def to_param
+    school
+  end
 end
