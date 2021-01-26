@@ -20,7 +20,7 @@ class CreatePlayers < ActiveRecord::Migration[6.1]
     add_index :players, :team_id
     add_index :players, :klass_id
     add_index :players, :position_id
-    add_index :players, :espn_id
+    add_index :players, :espn_id, unique: true
   end
 
   def down
