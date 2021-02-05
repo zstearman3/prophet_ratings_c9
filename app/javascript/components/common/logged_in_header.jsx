@@ -11,7 +11,6 @@ function NavLink(props) {
 }
 
 class Header extends React.Component {
-  debugger
   render () {
     const isLoggedIn = this.props.signed_in;
     let navLinks;

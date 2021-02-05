@@ -19,5 +19,7 @@ Rails.application.routes.draw do
   end
 
 
-  resources :teams, only: [:index]
+  resources :teams, only: [:index] do
+    get 'roster', on: :member
+  end
 end

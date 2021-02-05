@@ -5,6 +5,11 @@ class Team < ApplicationRecord
 
   belongs_to :state
   belongs_to :conference
+  has_many :players
+
+  def self.from_param(param)
+    find_by_school!(param)
+  end
 
   def to_param
     school
