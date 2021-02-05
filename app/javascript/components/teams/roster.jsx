@@ -16,7 +16,7 @@ const Roster = (props) => {
       }
     ));
   return (
-    <div className="roster-container team-container">
+    <div className="body-container roster-container team-container">
       <TeamHeader
         school={team.school}
         nickname={team.nickname}
