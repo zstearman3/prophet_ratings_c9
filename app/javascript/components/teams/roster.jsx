@@ -8,7 +8,7 @@ const Roster = (props) => {
   const columns = ['#', 'Name', 'Class']
   const data = props.roster.map((player, index) => (
       {
-        'key': index,
+        'key': player.id,
         '#': player.jersey_number,
         'Name': `${player.first_name} ${player.last_name}`,
         'Class': {value: player.klass_name,

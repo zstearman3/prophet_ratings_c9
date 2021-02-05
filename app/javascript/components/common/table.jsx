@@ -80,7 +80,7 @@ const Table = ({cols, data, extra_classes}) => {
       </thead>
       <tbody>
         {sortedData.map((item, index) => (
-          <tr key={index}>
+          <tr key={item["key"]}>
             {cols.map((key, index) => {
               const new_key = (typeof(key) === "object") ? key.value : key
               return(
