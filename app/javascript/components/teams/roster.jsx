@@ -11,7 +11,8 @@ const Roster = (props) => {
         'key': index,
         '#': player.jersey_number,
         'Name': `${player.first_name} ${player.last_name}`,
-        'Class': player.klass_name
+        'Class': {value: player.klass_name,
+                  sortValue: player.klass_id}
       }
     ));
   return (
@@ -23,6 +24,7 @@ const Roster = (props) => {
       <Table
         cols={columns}
         data={data}
+        extra_classes="roster-table"
       />
     </div>
   );
