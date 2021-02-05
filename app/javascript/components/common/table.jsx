@@ -1,5 +1,6 @@
 /* Table is a resuable component that takes cols, data, and extra_classes arguements
-   cols = Array (array of column names to be displayed in the table)
+   cols = Array (array of column names to be displayed in the table. Optionally a column can
+                 be an object with value=column_name and sortable:false to not let sorting occur on column)
    data = Array (array of objects. Objects will use the col string values as their keys. Optionally,
                 a value can be an object with a value and sortValue key. This lets the sorting be done
                 by the sortValue instead of by the value.)
@@ -58,27 +59,36 @@ const Table = ({cols, data, extra_classes}) => {
     <table className={`table ${extra_classes}`}>
       <thead>
         <tr>
-          {cols.map((column, index) => (
-            <th key={index}>
-              <button
-                type="button"
-                onClick={() => requestSort(column)}
-                className={getClassNamesFor(column)}
-              >
-                {column}
-              </button>
-            </th>
-          ))}
+          {cols.map((column, index) => {
+            if (typeof column === "object" && column.sortable === false){
+              return <th key={index}>{column.value}</th>
+            } else {
+              return(
+                <th key={index}>
+                  <button
+                    type="button"
+                    onClick={() => requestSort(column)}
+                    className={getClassNamesFor(column)}
+                  >
+                    {column}
+                  </button>
+                </th>
+              )
+            }
+          })}
         </tr>
       </thead>
       <tbody>
         {sortedData.map((item, index) => (
           <tr key={index}>
-            {cols.map((key, index) => (
-              <td key={index}>
-                { (typeof item[key] === "object") ? item[key].value : item[key] }
-              </td>
-             ))}
+            {cols.map((key, index) => {
+              const new_key = (typeof(key) === "object") ? key.value : key
+              return(
+                <td key={index}>
+                  { (typeof item[new_key] === "object") ? item[new_key].value : item[new_key] }
+                </td>
+              )
+            })}
           </tr>
         ))}
       </tbody>
