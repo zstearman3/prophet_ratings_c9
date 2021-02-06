@@ -1,3 +1,4 @@
+/** Mixins **/
 $breakpoints: (
   sm: 576px,
   md: 768px,
@@ -10,4 +11,14 @@ $breakpoints: (
   @media (min-width: $breakpoint-value) {
     @content;
   }
+}
+
+/** Variables **/
+$prophet-blue: #3d4d97;
+$prophet-white: #fefefc;
+$prophet-silver: #c0c0c0;
+
+/** Fonts **/
+body {
+  font-family: 'Titillium Web', sans-serif;
 }
