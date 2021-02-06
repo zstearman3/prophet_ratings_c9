@@ -1,9 +1,19 @@
 import React from "react"
+import PropTypes from 'prop-types'
 
-class Home extends React.Component {
-  render () {
+const Home = (props) => {
+  if (props.signed_in) {
     return (
-      <h1>Prophet Ratings 2.0</h1>
+      <div className="body-container">
+        <h1>Welcome to ProphetRatings 2.0!</h1>
+        <p>
+          This is a work in progress. So far we have teams and players!
+        </p>
+      </div>
+    );
+  } else {
+    return (
+      <h1>Please Log In</h1>
     );
   }
 }

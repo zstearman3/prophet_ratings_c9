@@ -1,6 +1,12 @@
 @import "./mixins.scss";
 
-/** PAGE HEADER **/
+/** Fonts **/
+a{
+  color: $prophet-blue;
+}
+
+
+/** Page Header **/
 
 .navbar{
   background-color: $prophet-blue;

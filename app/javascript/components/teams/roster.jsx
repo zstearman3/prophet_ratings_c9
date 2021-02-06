@@ -10,7 +10,9 @@ const Roster = (props) => {
       {
         'key': player.id,
         '#': player.jersey_number,
-        'Name': `${player.first_name} ${player.last_name}`,
+        'Name': {value: `${player.first_name} ${player.last_name}`,
+                 url: `/players/${player.id}`,
+                 sortValue: player.last_name},
         'Class': {value: player.klass_name,
                   sortValue: player.klass_id}
       }

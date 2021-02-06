@@ -1,9 +1,9 @@
 /* Table is a resuable component that takes cols, data, and extra_classes arguements
-   cols = Array (array of column names to be displayed in the table. Optionally a column can
-                 be an object with value=column_name and sortable:false to not let sorting occur on column)
-   data = Array (array of objects. Objects will use the col string values as their keys. Optionally,
-                a value can be an object with a value and sortValue key. This lets the sorting be done
-                by the sortValue instead of by the value.)
+   cols = Array (array of column names to be displayed in the table)
+                - Can be an object with value: column_name and sortable:false to not add sort to column
+   data = Array (array of objects. Objects will use the col string values as their keys)
+                - value can be an object with a sortValue for custom sorting on that column                by the sortValue instead of by the value.
+                - data can be used as a link by passing an object with value, sortValue, and url)
    extra_classes = String (css classes to be added to table)
 */
 
@@ -83,12 +83,19 @@ const Table = ({cols, data, extra_classes}) => {
           <tr key={item["key"]}>
             {cols.map((key, index) => {
               const new_key = (typeof(key) === "object") ? key.value : key
-              return(
-                <td key={index}>
-                  { (typeof item[new_key] === "object") ? item[new_key].value : item[new_key] }
-                </td>
-              )
-            })}
+              if (typeof(item[new_key]) === "object" && item[new_key].url){
+                return(
+                  <td key={index}>
+                    <a href={item[new_key].url}>{item[new_key].value}</a>
+                  </td>
+                )
+              } else {
+                return(
+                  <td key={index}>
+                    { (typeof item[new_key] === "object") ? item[new_key].value : item[new_key] }
+                  </td>
+                )
+            }})}
           </tr>
         ))}
       </tbody>
