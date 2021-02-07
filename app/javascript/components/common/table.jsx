@@ -24,6 +24,10 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
   const [sortConfig, setSortConfig] = React.useState(null);
   const [filterConfig, setFilterConfig] = React.useState(null);
 
+  const handleFilterChange = filters => {
+    setFilterConfig(filters);
+  }
+
   const requestSort = key => {
     let direction = 'ascending';
     if (sortConfig && sortConfig.key === key && sortConfig.direction === 'ascending') {
@@ -73,7 +77,7 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
 
   return (
     <div className="table-container">
-      { filterable ? <TableFilter /> : null }
+      { filterable ? <TableFilter filterCallback={handleFilterChange} /> : null }
       <table className={`table ${extraClasses}`}>
         <thead>
           <tr>
