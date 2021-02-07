@@ -1,7 +1,7 @@
 import React from "react"
 import FilterForm from "./filter_form"
 
-const TableFilter = ({filterCallback}) => {
+const TableFilter = ({filterCallback, cols}) => {
   const [activeFilters, setActiveFilters] = React.useState([]);
   const [expanded, setExpanded] = React.useState(false);
 
@@ -23,7 +23,10 @@ const TableFilter = ({filterCallback}) => {
             <div className="filters-container">
               Filter Row
             </div>
-            <FilterForm addFilter={addFilter} />
+            <FilterForm
+              addFilterCallback={addFilter}
+              cols={cols}
+            />
           </div>
         )
       }

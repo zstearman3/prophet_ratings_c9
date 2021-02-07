@@ -57,6 +57,14 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
     return filteredData
   }, [data, filterConfig]);
 
+  let filterColumns = () => {
+    let filterColumns = cols.map((col, index) => {
+      debugger
+      col.value
+    })
+    return filterColumns
+  }
+
   let sortedData = React.useMemo(() => {
     let sortedData = filteredData
     if (sortConfig !== null) {
@@ -77,7 +85,12 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
 
   return (
     <div className="table-container">
-      { filterable ? <TableFilter filterCallback={handleFilterChange} /> : null }
+      { filterable && (
+        <TableFilter
+          filterCallback={handleFilterChange}
+          cols={filterColumns()}
+        />
+      )}
       <table className={`table ${extraClasses}`}>
         <thead>
           <tr>
