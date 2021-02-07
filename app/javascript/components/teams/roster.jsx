@@ -5,14 +5,14 @@ import Table from '../common/table'
 
 const Roster = (props) => {
   const team = props.team;
-  const columns = ['#', 'Name', 'Class']
+  const columns = [{value:'#'}, {value:'Name'}, {value:'Class'}]
   const data = props.roster.map((player, index) => (
       {
-        'key': player.id,
-        '#': player.jersey_number,
-        'Name': {value: `${player.first_name} ${player.last_name}`,
-                 url: `/players/${player.id}`,
-                 sortValue: player.last_name},
+        'key':   player.id,
+        '#':     {value: player.jersey_number},
+        'Name':  {value: `${player.first_name} ${player.last_name}`,
+                  url: `/players/${player.id}`,
+                  sortValue: player.last_name},
         'Class': {value: player.klass_name,
                   sortValue: player.klass_id}
       }
@@ -27,6 +27,7 @@ const Roster = (props) => {
         cols={columns}
         data={data}
         extra_classes="roster-table"
+        filterable={true}
       />
     </div>
   );

@@ -1,16 +1,28 @@
 /* Table is a resuable component that takes cols, data, and extra_classes arguements
-   cols = Array (array of column names to be displayed in the table)
-                - Can be an object with value: column_name and sortable:false to not add sort to column
-   data = Array (array of objects. Objects will use the col string values as their keys)
-                - value can be an object with a sortValue for custom sorting on that column                by the sortValue instead of by the value.
-                - data can be used as a link by passing an object with value, sortValue, and url)
-   extra_classes = String (css classes to be added to table)
+   cols (array of Column objects)
+      Column - object with the following fields
+        value (string) - the name of the column - Required
+        sortable (bool) - defaults to true - optional
+        filterable (bool) - defaults to true - optional
+   data (array of Record objects)
+      Record (object of Field objects) - key for each object is required to match the column name
+      Field (object) - onject with the following fields
+        value (any) - the value to be displayed in the cell - required
+        sortValue (any) - the value which to sort by if not value - optional
+        url (string) - href value if the cell should be formatted as a link
+        extraClasses (string) - classes to be given to cell
+   extraClasses (string) - CSS classes to be given to table
+   sortable (bool) - defaults to true - optional
+   filterable (bool) - defaults to false - optional
 */
 
 import React from "react"
+import TableRow from "./table_row"
+import TableFilter from "./table_filter"
 
-const Table = ({cols, data, extra_classes}) => {
+const Table = ({cols, data, extraClasses, sortable, filterable}) => {
   const [sortConfig, setSortConfig] = React.useState(null);
+  const [filterConfig, setFilterConfig] = React.useState(null);
 
   const requestSort = key => {
     let direction = 'ascending';
@@ -24,83 +36,83 @@ const Table = ({cols, data, extra_classes}) => {
     if (!sortConfig){
       return;
     }
-    return sortConfig.key === col ? sortConfig.direction : undefined;
+    return sortConfig.key === col.value ? sortConfig.direction : undefined;
   }
 
+  let filteredData = React.useMemo(() => {
+    let filteredData = [...data]
+    if (filterable && filterConfig) {
+      filterConfig.forEach( filter => {
+        switch (filter.operator) {
+          case '>':
+            return (filteredData = filteredData.filter(record => record[filter.col].value > filter.value))
+          case '<':
+            return (filteredData = filteredData.filter(record => record[filter.col].value < filter.value))
+      }})
+    }
+    return filteredData
+  }, [data, filterConfig]);
+
   let sortedData = React.useMemo(() => {
-    let sortedData = [...data]
+    let sortedData = filteredData
     if (sortConfig !== null) {
-      if (typeof sortedData[0][sortConfig.key] !== "object") {
-        sortedData.sort((a, b) => {
-          if (a[sortConfig.key] < b[sortConfig.key]) {
-            return sortConfig.direction === 'ascending' ? -1 : 1;
-          }
-          if (a[sortConfig.key] > b[sortConfig.key]) {
-            return sortConfig.direction === 'ascending' ? 1 : -1;
-          }
-          return 0;
-        });
-      } else {
-        sortedData.sort((a, b) => {
-          if (a[sortConfig.key].sortValue < b[sortConfig.key].sortValue) {
-            return sortConfig.direction === 'ascending' ? -1 : 1;
-          }
-          if (a[sortConfig.key].sortValue > b[sortConfig.key].sortValue) {
-            return sortConfig.direction === 'ascending' ? 1 : -1;
-          }
-          return 0;
-        });
-      }
+      let sortAttribute = sortedData[0][sortConfig.key].sortValue ? "sortValue" : "value"
+      sortedData.sort((a, b) => {
+        if (a[sortConfig.key][sortAttribute] < b[sortConfig.key][sortAttribute]) {
+          return sortConfig.direction === 'ascending' ? -1 : 1;
+        }
+        if (a[sortConfig.key][sortAttribute] > b[sortConfig.key][sortAttribute]) {
+          return sortConfig.direction === 'ascending' ? 1 : -1;
+        }
+        return 0;
+      });
     }
     return sortedData;
   }, [data, sortConfig]);
 
+
   return (
-    <table className={`table ${extra_classes}`}>
-      <thead>
-        <tr>
-          {cols.map((column, index) => {
-            if (typeof column === "object" && column.sortable === false){
-              return <th key={index}>{column.value}</th>
-            } else {
-              return(
-                <th key={index}>
-                  <button
-                    type="button"
-                    onClick={() => requestSort(column)}
-                    className={getClassNamesFor(column)}
-                  >
-                    {column}
-                  </button>
-                </th>
-              )
-            }
-          })}
-        </tr>
-      </thead>
-      <tbody>
-        {sortedData.map((item, index) => (
-          <tr key={item["key"]}>
-            {cols.map((key, index) => {
-              const new_key = (typeof(key) === "object") ? key.value : key
-              if (typeof(item[new_key]) === "object" && item[new_key].url){
-                return(
-                  <td key={index}>
-                    <a href={item[new_key].url}>{item[new_key].value}</a>
-                  </td>
-                )
+    <div className="table-container">
+      { filterable ? <TableFilter /> : null }
+      <table className={`table ${extraClasses}`}>
+        <thead>
+          <tr>
+            {cols.map((column, index) => {
+              if (column.sortable === false){
+                return <th key={index}>{column.value}</th>
               } else {
                 return(
-                  <td key={index}>
-                    { (typeof item[new_key] === "object") ? item[new_key].value : item[new_key] }
-                  </td>
+                  <th key={index}>
+                    <button
+                      type="button"
+                      onClick={() => requestSort(column.value)}
+                      className={getClassNamesFor(column)}
+                    >
+                      {column.value}
+                    </button>
+                  </th>
                 )
-            }})}
+              }
+            })}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {sortedData.map((item, index) => (
+            <TableRow
+              cols={cols}
+              item={item}
+              key={item["key"]}
+            />
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
+}
+
+Table.defaultProps = {
+  sortable: "true",
+  filterable: "false"
 }
 
 export default Table
