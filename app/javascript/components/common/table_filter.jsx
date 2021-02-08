@@ -8,6 +8,10 @@ const TableFilter = ({handleAddFilter, activeFilters, cols}) => {
     handleAddFilter(newFilter)
   }
 
+  const removeFilter = filterKey => {
+    console.log(filterKey)
+  }
+
   let buttonText = expanded ? '-' : '+'
 
   return (
@@ -18,13 +22,26 @@ const TableFilter = ({handleAddFilter, activeFilters, cols}) => {
       { expanded &&
          (
           <div className="filter-body">
-            <div className="filters-container">
-              { activeFilters.map((filter, index) => {
-                return(
-                  <p key={filter.col}>{`${filter.col} ${filter.operator} ${filter.value}`}</p>
-                )
-              })}
-            </div>
+            <table className="filters-table">
+              <tbody>
+                { activeFilters.map((filter, index) => {
+                  return(
+                    <tr key={filter.key}>
+                      <td>{filter.col}</td>
+                      <td>{filter.operator}</td>
+                      <td>{filter.value}</td>
+                      <td><button
+                            type="button"
+                            onClick={() => removeFilter(filter.key)}
+                            className="remove-filter-button"
+                          >Remove
+                          </button>
+                      </td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
             <FilterForm
               addFilter={addFilter}
               cols={cols}

@@ -47,13 +47,15 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
 
   let filteredData = React.useMemo(() => {
     let filteredData = [...data]
-    if (filterable && setActiveFilters.length > 0) {
+    if (filterable && activeFilters.length > 0) {
       activeFilters.forEach( filter => {
         switch (filter.operator) {
           case '>':
             return (filteredData = filteredData.filter(record => record[filter.col].value > filter.value))
           case '<':
             return (filteredData = filteredData.filter(record => record[filter.col].value < filter.value))
+          case '=':
+            return (filteredData = filteredData.filter(record => record[filter.col].value == filter.value))
       }})
     }
     return filteredData
