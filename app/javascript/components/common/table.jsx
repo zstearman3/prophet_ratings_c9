@@ -24,7 +24,7 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
   const [sortConfig, setSortConfig] = React.useState(null);
   const [activeFilters, setActiveFilters] = React.useState([]);
 
-  const handleFilterChange = newFilter => {
+  const handleAddFilter = newFilter => {
     let filters = [...activeFilters]
     filters.push(newFilter)
     setActiveFilters(filters);
@@ -83,7 +83,8 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
     <div className="table-container">
       { filterable && (
         <TableFilter
-          handleFilterChange={handleFilterChange}
+          handleAddFilter={handleAddFilter}
+          activeFilters={activeFilters}
           cols={filterColumns}
         />
       )}

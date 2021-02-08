@@ -2,6 +2,7 @@ import React from "react"
 
 const FilterForm = ({addFilter, cols}) => {
   const [newFilter, setNewFilter] = React.useState({
+    key: "",
     col: "",
     operator: "",
     value: ""
@@ -16,10 +17,19 @@ const FilterForm = ({addFilter, cols}) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const formattedFilter = {...newFilter,
-      value: parseFloat(newFilter.value)
+    let value = newFilter.value;
+    value = isNumeric(value) ? parseFloat(value) : value
+    const formattedFilter = {
+      ...newFilter,
+      value: value,
+      key: newFilter.col + value
     }
     addFilter(formattedFilter);
+  }
+
+  const isNumeric = (str) => {
+    return !isNaN(str) &&
+           !isNaN(parseFloat(str))
   }
 
   let columnOptions = cols.map((col) => {

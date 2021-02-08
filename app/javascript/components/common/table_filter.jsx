@@ -1,11 +1,11 @@
 import React from "react"
 import FilterForm from "./filter_form"
 
-const TableFilter = ({handleFilterChange, cols}) => {
+const TableFilter = ({handleAddFilter, activeFilters, cols}) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const addFilter = (newFilter) => {
-    handleFilterChange(newFilter)
+    handleAddFilter(newFilter)
   }
 
   let buttonText = expanded ? '-' : '+'
@@ -19,7 +19,11 @@ const TableFilter = ({handleFilterChange, cols}) => {
          (
           <div className="filter-body">
             <div className="filters-container">
-              Filter Row
+              { activeFilters.map((filter, index) => {
+                return(
+                  <p key={filter.col}>{`${filter.col} ${filter.operator} ${filter.value}`}</p>
+                )
+              })}
             </div>
             <FilterForm
               addFilter={addFilter}
