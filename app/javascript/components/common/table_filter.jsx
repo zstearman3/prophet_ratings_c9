@@ -22,7 +22,16 @@ const TableFilter = ({handleAddFilter, activeFilters, cols}) => {
       { expanded &&
          (
           <div className="filter-body">
+            <h4>Active Filters</h4>
             <table className="filters-table">
+              <thead>
+                <tr>
+                  <th>Column</th>
+                  <th>Operator</th>
+                  <th>Value</th>
+                  <th></th>
+                </tr>
+              </thead>
               <tbody>
                 { activeFilters.map((filter, index) => {
                   return(
@@ -33,7 +42,7 @@ const TableFilter = ({handleAddFilter, activeFilters, cols}) => {
                       <td><button
                             type="button"
                             onClick={() => removeFilter(filter.key)}
-                            className="remove-filter-button"
+                            className="remove-filter-button button-normal"
                           >Remove
                           </button>
                       </td>

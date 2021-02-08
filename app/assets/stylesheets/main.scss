@@ -72,3 +72,47 @@ table{
     }
   }
 }
+.filter-button-container{
+  width: 100%;
+  display: block;
+  clear: both;
+  button{
+    float: right;
+  }
+}
+.filter-body{
+  width: 100%;
+  display: block;
+  clear: both;
+  background-color: $prophet-silver;
+  padding: 5px;
+  margin: 2px 0px;
+  border-radius: 2px;
+  .button-normal{
+    float: right;
+  }
+  .filter-form-container{
+    .filter-input{
+      margin-right: 2px;
+    }
+    .column-filter-input, .value-filter-input{
+      width: 30%;
+    }
+    .operator-filter-input{
+      width: 20%;
+    }
+  }
+  .filters-table{
+    width: 100%;
+    color: $prophet-white;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+
+/** Buttons **/
+
+.button-normal{
+  background-color: $prophet-blue;
+  color: $prophet-white;
+}

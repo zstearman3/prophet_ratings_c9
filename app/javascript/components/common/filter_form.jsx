@@ -45,6 +45,7 @@ const FilterForm = ({addFilter, cols}) => {
       <form onSubmit={handleSubmit}>
         <select
           value={newFilter.column}
+          className="filter-input column-filter-input"
           name="col"
           onChange={handleChange}
         >
@@ -53,6 +54,7 @@ const FilterForm = ({addFilter, cols}) => {
         </select>
         <select
           value={newFilter.operator}
+          className="filter-input operator-filter-input"
           name="operator"
           onChange={handleChange}
         >
@@ -61,12 +63,14 @@ const FilterForm = ({addFilter, cols}) => {
         </select>
         <input
           type="text"
+          className="filter-input value-filter-input"
           name="value"
           placeholder="value"
           value={newFilter.value}
           onChange={handleChange}
         />
         <input
+          className="button-normal filter-button"
           type="submit"
           value="Add Filter"
         />
