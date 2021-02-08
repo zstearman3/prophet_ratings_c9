@@ -1,16 +1,14 @@
 import React from "react"
 import FilterForm from "./filter_form"
 
-const TableFilter = ({filterCallback, cols}) => {
-  const [activeFilters, setActiveFilters] = React.useState([]);
+const TableFilter = ({handleFilterChange, cols}) => {
   const [expanded, setExpanded] = React.useState(false);
 
-  let buttonText = expanded ? '-' : '+'
-
-  const addFilter = filter => {
-    let filters = [...activeFilters].push(filter)
-    setActiveFilters(filters)
+  const addFilter = (newFilter) => {
+    handleFilterChange(newFilter)
   }
+
+  let buttonText = expanded ? '-' : '+'
 
   return (
     <div className="table-filter">
@@ -24,7 +22,7 @@ const TableFilter = ({filterCallback, cols}) => {
               Filter Row
             </div>
             <FilterForm
-              addFilterCallback={addFilter}
+              addFilter={addFilter}
               cols={cols}
             />
           </div>

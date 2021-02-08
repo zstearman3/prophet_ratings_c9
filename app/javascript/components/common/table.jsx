@@ -22,10 +22,12 @@ import TableFilter from "./table_filter"
 
 const Table = ({cols, data, extraClasses, sortable, filterable}) => {
   const [sortConfig, setSortConfig] = React.useState(null);
-  const [filterConfig, setFilterConfig] = React.useState(null);
+  const [activeFilters, setActiveFilters] = React.useState([]);
 
-  const handleFilterChange = filters => {
-    setFilterConfig(filters);
+  const handleFilterChange = newFilter => {
+    let filters = [...activeFilters]
+    filters.push(newFilter)
+    setActiveFilters(filters);
   }
 
   const requestSort = key => {
@@ -45,8 +47,8 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
 
   let filteredData = React.useMemo(() => {
     let filteredData = [...data]
-    if (filterable && filterConfig) {
-      filterConfig.forEach( filter => {
+    if (filterable && setActiveFilters.length > 0) {
+      activeFilters.forEach( filter => {
         switch (filter.operator) {
           case '>':
             return (filteredData = filteredData.filter(record => record[filter.col].value > filter.value))
@@ -55,15 +57,9 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
       }})
     }
     return filteredData
-  }, [data, filterConfig]);
+  }, [data, activeFilters]);
 
-  let filterColumns = () => {
-    let filterColumns = cols.map((col, index) => {
-      debugger
-      col.value
-    })
-    return filterColumns
-  }
+  let filterColumns = cols.map( col => col.value )
 
   let sortedData = React.useMemo(() => {
     let sortedData = filteredData
@@ -80,15 +76,15 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
       });
     }
     return sortedData;
-  }, [data, sortConfig]);
+  }, [filteredData, sortConfig]);
 
 
   return (
     <div className="table-container">
       { filterable && (
         <TableFilter
-          filterCallback={handleFilterChange}
-          cols={filterColumns()}
+          handleFilterChange={handleFilterChange}
+          cols={filterColumns}
         />
       )}
       <table className={`table ${extraClasses}`}>
