@@ -25,6 +25,12 @@ const FilterForm = ({addFilter, cols}) => {
       key: newFilter.col + value
     }
     addFilter(formattedFilter);
+    setNewFilter({
+      key: "",
+      col: "",
+      operator: "",
+      value: ""
+    })
   }
 
   const isNumeric = (str) => {
@@ -44,12 +50,12 @@ const FilterForm = ({addFilter, cols}) => {
     <div className="filter-form-container">
       <form onSubmit={handleSubmit}>
         <select
-          value={newFilter.column}
+          value={newFilter.col}
           className="filter-input column-filter-input"
           name="col"
           onChange={handleChange}
         >
-          <option key="empty"></option>
+          <option key="empty" value=""></option>
           { columnOptions }
         </select>
         <select
@@ -58,7 +64,7 @@ const FilterForm = ({addFilter, cols}) => {
           name="operator"
           onChange={handleChange}
         >
-          <option key="empty"></option>
+          <option key="empty" value=""></option>
           { operatorOptions }
         </select>
         <input

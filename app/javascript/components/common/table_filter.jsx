@@ -1,15 +1,15 @@
 import React from "react"
 import FilterForm from "./filter_form"
 
-const TableFilter = ({handleAddFilter, activeFilters, cols}) => {
+const TableFilter = ({handleAddFilter, handleRemoveFilter, activeFilters, cols}) => {
   const [expanded, setExpanded] = React.useState(false);
 
   const addFilter = (newFilter) => {
-    handleAddFilter(newFilter)
+    handleAddFilter(newFilter);
   }
 
   const removeFilter = filterKey => {
-    console.log(filterKey)
+    handleRemoveFilter(filterKey);
   }
 
   let buttonText = expanded ? '-' : '+'

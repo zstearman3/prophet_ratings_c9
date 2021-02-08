@@ -30,6 +30,17 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
     setActiveFilters(filters);
   }
 
+  const handleRemoveFilter = filterKey => {
+    let filters = [...activeFilters]
+    for (let i=0; i < filters.length; i++){
+      if (filters[i].key === filterKey){
+        filters.splice(i, 1);
+        break
+      }
+    }
+    setActiveFilters(filters);
+  }
+
   const requestSort = key => {
     let direction = 'ascending';
     if (sortConfig && sortConfig.key === key && sortConfig.direction === 'ascending') {
@@ -47,7 +58,7 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
 
   let filteredData = React.useMemo(() => {
     let filteredData = [...data]
-    if (filterable && activeFilters.length > 0) {
+    if (filterable && activeFilters && activeFilters.length > 0) {
       activeFilters.forEach( filter => {
         switch (filter.operator) {
           case '>':
@@ -86,6 +97,7 @@ const Table = ({cols, data, extraClasses, sortable, filterable}) => {
       { filterable && (
         <TableFilter
           handleAddFilter={handleAddFilter}
+          handleRemoveFilter={handleRemoveFilter}
           activeFilters={activeFilters}
           cols={filterColumns}
         />
