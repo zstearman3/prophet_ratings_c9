@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_25_174335) do
+ActiveRecord::Schema.define(version: 2021_03_15_170432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,11 +59,56 @@ ActiveRecord::Schema.define(version: 2021_01_25_174335) do
     t.datetime "updated_at", precision: 6
   end
 
+  create_table "seasons", force: :cascade do |t|
+    t.integer "year"
+    t.date "start_date"
+    t.date "end_date"
+    t.date "postseason_start_date"
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
+  end
+
   create_table "states", force: :cascade do |t|
     t.string "name"
     t.string "abbreviation"
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+  end
+
+  create_table "team_seasons", force: :cascade do |t|
+    t.bigint "team_id"
+    t.bigint "season_id"
+    t.integer "wins"
+    t.integer "losses"
+    t.float "offensive_efficiency"
+    t.float "defensive_efficiency"
+    t.float "total_efficiency"
+    t.float "points_per_game"
+    t.float "points_allowed_per_game"
+    t.float "rebounds_per_game"
+    t.float "assists_per_game"
+    t.float "rebound_rate"
+    t.float "assist_rate"
+    t.float "allowed_assist_rate"
+    t.float "three_point_rate"
+    t.float "allowed_three_point_rate"
+    t.float "three_point_proficiency"
+    t.float "allowed_three_point_proficiency"
+    t.float "home_court_advantage"
+    t.decimal "normal_offensive_efficiency", precision: 8, scale: 5
+    t.decimal "normal_defensive_efficiency", precision: 8, scale: 5
+    t.decimal "normal_total_efficiency", precision: 8, scale: 5
+    t.decimal "normal_rebound_rate", precision: 8, scale: 5
+    t.decimal "normal_assist_rate", precision: 8, scale: 5
+    t.decimal "normal_allowed_assist_rate", precision: 8, scale: 5
+    t.decimal "normal_three_point_proficiency", precision: 8, scale: 5
+    t.decimal "nomral_allowed_three_point_proficiency", precision: 8, scale: 5
+    t.decimal "normal_home_court_advantage", precision: 8, scale: 5
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
+    t.index ["season_id"], name: "index_team_seasons_on_season_id"
+    t.index ["team_id", "season_id"], name: "index_team_seasons_on_team_id_and_season_id", unique: true
+    t.index ["team_id"], name: "index_team_seasons_on_team_id"
   end
 
   create_table "teams", force: :cascade do |t|
