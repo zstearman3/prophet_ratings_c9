@@ -1,7 +1,7 @@
 class TeamsController < ApplicationController
 
   def index
-    @teams = Team.all
+    @conferences = Conference.includes(:teams).all
   end
 
   def roster

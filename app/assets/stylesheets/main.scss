@@ -5,6 +5,26 @@ a{
   color: $prophet-blue;
 }
 
+/** Container **/
+.page-container{
+  padding-top: 10px;
+  margin: auto;
+  @include breakpoint(sm) {
+    width: 550px;
+  }
+  @include breakpoint(md) {
+    width: 750px;
+  }
+  @include breakpoint(lg) {
+    width: 980px;
+  }
+  @include breakpoint(xl) {
+    width: 1190px;
+  }
+  @include breakpoint(xxl) {
+    width: 1625px;
+  }
+}
 
 /** Page Header **/
 
@@ -31,14 +51,6 @@ a{
 
 body{
   background-color: $prophet-white;
-}
-
-.body-container{
-  padding-top: 10px;
-  @include breakpoint(lg) {
-    width: 85%;
-    margin: auto;
-  }
 }
 
 /** Tables **/

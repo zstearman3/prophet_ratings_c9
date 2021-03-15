@@ -1,0 +1,19 @@
+<table class="conference-table">
+  <thead>
+    <tr>
+      <th>School</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% teams.each do |team| %>
+      <tr>
+        <td><%= team.school %></td>
+        <td>
+          <%= link_to "Roster", roster_team_path(team) %> |
+          <%= link_to "Dashboard", team_path(team) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

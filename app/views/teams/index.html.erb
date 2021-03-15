@@ -1,5 +1,10 @@
-<% @teams.all.each do |team| %>
-  <p style=<%= "color:#{team.primary_color}" %>><%= link_to team.school, roster_team_path(team) %></p>
-<% end %>
+<div class="row">
+  <% @conferences.all.each do |conference| %>
+    <div class="col-md-4">
+      <h3><%= conference.name %></h3>
+      <%= render "conference_table", teams: conference.teams %>
+    </div>
+  <% end %>
+</div>
 
 <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
