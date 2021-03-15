@@ -1,6 +1,6 @@
 <div class="row">
   <% @conferences.all.each do |conference| %>
-    <div class="col-md-4">
+    <div class="col-md-4 conference-container">
       <h3><%= conference.name %></h3>
       <%= render "conference_table", teams: conference.teams %>
     </div>
