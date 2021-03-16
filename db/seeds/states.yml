@@ -12,6 +12,8 @@
   abbreviation: CO
 - name: Connecticut
   abbreviation: CT
+- name: D.C.
+  abbreviation: DC
 - name: Delaware
   abbreviation: DE
 - name: Florida
@@ -28,7 +30,6 @@
   abbreviation: IN
 - name: Iowa
   abbreviation: IA
-
 - name: Kansas
   abbreviation: KS
 - name: Kentucky

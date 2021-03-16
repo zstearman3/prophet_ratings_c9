@@ -299,3 +299,293 @@
   conference: AAC
   espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2724/wichita-state-shockers
   espn_id: 2724
+- school: Davidson
+  nickname: Wildcats
+  abbreviation: DAV
+  primary_color: "#AC1A2F"
+  secondary_color: "#000000"
+  city: Davidson
+  state: NC
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2166/davidson-wildcats
+  espn_id: 2166
+- school: Dayton
+  nickname: Flyers
+  abbreviation: DAY
+  primary_color: "#CE1141"
+  secondary_color: "#004B8D"
+  city: Dayton
+  state: OH
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2168/dayton-flyers
+  espn_id: 2168
+- school: Duquesne
+  nickname: Dukes
+  abbreviation: DUQ
+  primary_color: "#041E42"
+  secondary_color: "#BA0C2F"
+  city: Pittsburgh
+  state: PA
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2184/duquesne-dukes
+  espn_id: 2184
+- school: Fordham
+  nickname: Rams
+  abbreviation: FOR
+  primary_color: "#860038"
+  secondary_color: "#FFFFFF"
+  city: The Bronx
+  state: NY
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2230/fordham-rams
+  espn_id: 2230
+- school: George Mason
+  nickname: Patriots
+  abbreviation: GMU
+  primary_color: "#006633"
+  secondary_color: "#FFCC33"
+  city: Fairfax
+  state: VA
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2244/george-mason-patriots
+  espn_id: 2244
+- school: George Washington
+  nickname: Colonials
+  abbreviation: GW
+  primary_color: "#E2CB92"
+  secondary_color: "#002654"
+  city: Washington
+  state: DC
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/45/george-washington-colonials
+  espn_id: 45
+- school: La Salle
+  nickname: Explorers
+  abbreviation: LAS
+  primary_color: "#FFCC00"
+  secondary_color: "#003366"
+  city: Philadelphia
+  state: PA
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2325/la-salle-explorers
+  espn_id: 2325
+- school: Rhode Island
+  nickname: Rams
+  abbreviation: URI
+  primary_color: "#68ABE8"
+  secondary_color: "#002147"
+  city: South Kingstown
+  state: RI
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/227/rhode-island-rams
+  espn_id: 227
+- school: Richmond
+  nickname: Spiders
+  abbreviation: RICH
+  primary_color: "#000066"
+  secondary_color: "#990000"
+  city: Richmond
+  state: VA
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/257/richmond-spiders
+  espn_id: 257
+- school: Saint Joseph's
+  nickname: Hawks
+  abbreviation: JOES
+  primary_color: "#9E1B32"
+  secondary_color: "#6C6F70"
+  city: Philadelphia
+  state: PA
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2603/saint-josephs-hawks
+  espn_id: 2603
+- school: Saint Louis
+  nickname: Billikens
+  abbreviation: SLU
+  primary_color: "#003DA5"
+  secondary_color: "#C8C9C7"
+  city: St. Louis
+  state: MO
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/139/saint-louis-billikens
+  espn_id: 139
+- school: St. Bonaventure
+  nickname: Bonnies
+  abbreviation: SBU
+  primary_color: "#54261A"
+  secondary_color: "#BDB6B0"
+  city: Allegany
+  state: NY
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/179/st-bonaventure-bonnies
+  espn_id: 179
+- school: UMass
+  nickname: Minutemen
+  abbreviation: MASS
+  primary_color: "#971B2F"
+  secondary_color: "#B1B3B3"
+  city: Amherst
+  state: MA
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/113/umass-minutemen
+  espn_id: 113
+- school: VCU
+  nickname: Rams
+  abbreviation: VCU
+  primary_color: "#FFB300"
+  secondary_color: "#FFFFFF"
+  city: Richmond
+  state: VA
+  conference: A10
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2670/vcu-rams
+  espn_id: 2670
+- school: Boston College
+  nickname: Eagles
+  abbreviation: BC
+  primary_color: "#98002E"
+  secondary_color: "#BC9B6A"
+  city: Newtown
+  state: MA
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/103/boston-college-eagles
+  espn_id: 103
+- school: Clemson
+  nickname: Tigers
+  abbreviation: CLEM
+  primary_color: "#F56600"
+  secondary_color: "#522D80"
+  city: Clemson
+  state: SC
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/228/clemson-tigers
+  espn_id: 228
+- school: Duke
+  nickname: Blue Devils
+  abbreviation: DUKE
+  primary_color: "#003087"
+  secondary_color: "#FFFFFF"
+  city: Durham
+  state: NC
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/150/duke-blue-devils
+  espn_id: 150
+- school: Florida State
+  nickname: Seminoles
+  abbreviation: FSU
+  primary_color: "#782F40"
+  secondary_color: "#CEB888"
+  city: Tallahassee
+  state: FL
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/52/florida-state-seminoless
+  espn_id: 52
+- school: Georgia Tech
+  nickname: Yellow Jackets
+  abbreviation: GT
+  primary_color: "#B3A369"
+  secondary_color: "#003057"
+  city: Atlanta
+  state: GA
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/59/georgia-tech-yellow-jackets
+  espn_id: 59
+- school: Louisville
+  nickname: Cardinals
+  abbreviation: LOU
+  primary_color: "#AD0000"
+  secondary_color: "#000000"
+  city: Louisville
+  state: KY
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/97/louisville-cardinals
+  espn_id: 97
+- school: Miami
+  nickname: Hurricanes
+  abbreviation: MIA
+  primary_color: "#F47321"
+  secondary_color: "#005030"
+  city: Coral Gables
+  state: FL
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2390/miami-hurricanes
+  espn_id: 2390
+- school: NC State
+  nickname: Wolfpack
+  abbreviation: NCST
+  primary_color: "#CC0000"
+  secondary_color: "#000000"
+  city: Raleigh
+  state: NC
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/152/nc-state-wolfpack
+  espn_id: 152
+- school: North Carolina
+  nickname: Tar Heels
+  abbreviation: UNC
+  primary_color: "#7BAFD4"
+  secondary_color: "#FFFFFF"
+  city: Chapel Hill
+  state: NC
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/153/north-carolina-tar-heels
+  espn_id: 153
+- school: Notre Dame
+  nickname: Fighting Irish
+  abbreviation: ND
+  primary_color: "#0C2340"
+  secondary_color: "#C99700"
+  city: Notre Dame
+  state: IN
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/87/notre-dame-fighting-irish
+  espn_id: 87
+- school: Pittsburgh
+  nickname: Panthers
+  abbreviation: PITT
+  primary_color: "#003594"
+  secondary_color: "#FFB81C"
+  city: Pittsburgh
+  state: PA
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/221/pittsburgh-panthers
+  espn_id: 221
+- school: Syracuse
+  nickname: Orange
+  abbreviation: SYR
+  primary_color: "#D44500"
+  secondary_color: "#3E3D3C"
+  city: Syracuse
+  state: NY
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/183/syracuse-orange
+  espn_id: 183
+- school: Virginia
+  nickname: Cavaliers
+  abbreviation: UVA
+  primary_color: "#232D4B"
+  secondary_color: "#F84C1E"
+  city: Charlottesville
+  state: VA
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/258/virginia-cavaliers
+  espn_id: 258
+- school: Virginia Tech
+  nickname: Hokies
+  abbreviation: VT
+  primary_color: "#630031"
+  secondary_color: "#CF4420"
+  city: Blacksburg
+  state: VA
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/259/virginia-tech-hokies
+  espn_id: 259
+- school: Wake Forest
+  nickname: Demon Deacons
+  abbreviation: WAKE
+  primary_color: "#9E7E38"
+  secondary_color: "#000000"
+  city: Winston-Salem
+  state: NC
+  conference: ACC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/154/wake-forest-demon-deacons
+  espn_id: 154
