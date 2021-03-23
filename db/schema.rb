@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_15_170432) do
+ActiveRecord::Schema.define(version: 2021_03_23_023618) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,35 @@ ActiveRecord::Schema.define(version: 2021_03_15_170432) do
     t.string "logo_url"
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.bigint "season_id"
+    t.bigint "home_team_id"
+    t.bigint "away_team_id"
+    t.integer "espn_id"
+    t.boolean "is_tournament"
+    t.boolean "neutral_site"
+    t.string "status"
+    t.datetime "date"
+    t.boolean "in_conference"
+    t.boolean "has_overtime"
+    t.integer "home_team_score"
+    t.integer "home_team_first_half_score"
+    t.integer "home_team_second_half_score"
+    t.integer "home_team_overtime_score"
+    t.boolean "home_team_winner"
+    t.integer "away_team_score"
+    t.integer "away_team_first_half_score"
+    t.integer "away_team_second_half_score"
+    t.integer "away_team_overtime_score"
+    t.boolean "away_team_winner"
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
+    t.index ["away_team_id"], name: "index_games_on_away_team_id"
+    t.index ["espn_id"], name: "index_games_on_espn_id", unique: true
+    t.index ["home_team_id"], name: "index_games_on_home_team_id"
+    t.index ["season_id"], name: "index_games_on_season_id"
   end
 
   create_table "klasses", force: :cascade do |t|
@@ -126,6 +155,7 @@ ActiveRecord::Schema.define(version: 2021_03_15_170432) do
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
     t.index ["conference_id"], name: "index_teams_on_conference_id"
+    t.index ["espn_id"], name: "index_teams_on_espn_id", unique: true
     t.index ["school"], name: "index_teams_on_school", unique: true
     t.index ["state_id"], name: "index_teams_on_state_id"
   end
