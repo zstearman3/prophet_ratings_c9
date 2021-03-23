@@ -799,3 +799,113 @@
   conference: BE
   espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2752/xavier-musketeers
   espn_id: 2752
+- school: Eastern Washington
+  nickname: Eagles
+  abbreviation: EWU
+  primary_color: "#A10022"
+  secondary_color: "#000000"
+  city: Cheney
+  state: WA
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/331/eastern-washington-eagles
+  espn_id: 331
+- school: Idaho State
+  nickname: Bengals
+  abbreviation: IDST
+  primary_color: "#FF671F"
+  secondary_color: "#000000"
+  city: Pocatello
+  state: ID
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/304/idaho-state-bengals
+  espn_id: 304
+- school: Idaho
+  nickname: Vandals
+  abbreviation: IDHO
+  primary_color: "#B3A369"
+  secondary_color: "#000000"
+  city: Moscow
+  state: ID
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/70/idaho-vandals
+  espn_id: 70
+- school: Montana
+  nickname: Grizzlies
+  abbreviation: MONT
+  primary_color: "#660033"
+  secondary_color: "#999999"
+  city: Missoula
+  state: MT
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/149/montana-grizzlies
+  espn_id: 149
+- school: Montana State
+  nickname: Bobcats
+  abbreviation: MTST
+  primary_color: "#00205B"
+  secondary_color: "#B9975B"
+  city: Bozeman
+  state: MT
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/147/montana-state-bobcats
+  espn_id: 147
+- school: Northern Arizona
+  nickname: Lumberjacks
+  abbreviation: NAU
+  primary_color: "#003466"
+  secondary_color: "#FFD200"
+  city: Flagstaff
+  state: AZ
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2464/northern-arizona-lumberjacks
+  espn_id: 2464
+- school: Northern Colorado
+  nickname: Bears
+  abbreviation: UNCO
+  primary_color: "#013C65"
+  secondary_color: "#F6B000"
+  city: Greeley
+  state: CO
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2458/northern-colorado-bears
+  espn_id: 2458
+- school: Portland State
+  nickname: Vikings
+  abbreviation: PRST
+  primary_color: "#154734"
+  secondary_color: "#FFFFFF"
+  city: Portland
+  state: OR
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2502/portland-state-vikings
+  espn_id: 2502
+- school: Sacramento State
+  nickname: Hornets
+  abbreviation: SAC
+  primary_color: "#043927"
+  secondary_color: "#C4B581"
+  city: Sacramento
+  state: CA
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/16/sacramento-state-hornets
+  espn_id: 16
+- school: Southern Utah
+  nickname: Thunderbirds
+  abbreviation: SUU
+  primary_color: "#C41425"
+  secondary_color: "#000000"
+  city: Cedar City
+  state: UT
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/253/southern-utah-thunderbirds
+  espn_id: 253
+- school: Weber State
+  nickname: Wildcats
+  abbreviation: WEB
+  primary_color: "#4B2682"
+  secondary_color: "#A1A1A4"
+  city: Ogden
+  state: UT
+  conference: BSKY
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2692/weber-state-wildcats
+  espn_id: 2692
