@@ -14,6 +14,7 @@ gem 'jbuilder',    '~> 2.7'
 gem 'devise',      '~> 4.7.3'
 gem 'kimurai',     '~> 1.4.0'
 gem 'bootsnap',    '>= 1.4.4', require: false
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
