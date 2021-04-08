@@ -909,3 +909,253 @@
   conference: BSKY
   espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2692/weber-state-wildcats
   espn_id: 2692
+- school: Campbell
+  nickname: Fighting Camels
+  abbreviation: CAM
+  primary_color: "#F58025"
+  secondary_color: "#231F20"
+  city: Buies Creek
+  state: NC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2097/campbell-fighting-camels
+  espn_id: 2097
+- school: Charleston Southern
+  nickname: Buccaneers
+  abbreviation: CHSO
+  primary_color: "#A8996E"
+  secondary_color: "#002855"
+  city: Charleston
+  state: SC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2127/charleston-southern-buccaneers
+  espn_id: 2127
+- school: Gardner-Webb
+  nickname: Bulldogs
+  abbreviation: GWEB
+  primary_color: "#BF2F37"
+  secondary_color: "#FFFFFF"
+  city: Boiling Springs
+  state: NC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2241/gardner-webb-bulldogs
+  espn_id: 2241
+- school: Hampton
+  nickname: Pirates
+  abbreviation: HAMP
+  primary_color: "#0060A9"
+  secondary_color: "#FFFFFF"
+  city: Hampton
+  state: VA
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2261/hampton-pirates
+  espn_id: 2261
+- school: High Point
+  nickname: Panthers
+  abbreviation: HP
+  primary_color: "#330072"
+  secondary_color: "#FFFFFF"
+  city: High Point
+  state: NC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2272/high-point-panthers
+  espn_id: 2272
+- school: Longwood
+  nickname: Lancers
+  abbreviation: LONG
+  primary_color: "#15213B"
+  secondary_color: "#999D9E"
+  city: Farmville
+  state: VA
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2344/longwood-lancers
+  espn_id: 2344
+- school: Presbyterian
+  nickname: Blue Hose
+  abbreviation: PRES
+  primary_color: "#0060A9"
+  secondary_color: "#9D2235"
+  city: Clinton
+  state: SC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2506/presbyterian-blue-hose
+  espn_id: 2506
+- school: Radford
+  nickname: Highlanders
+  abbreviation: RAD
+  primary_color: "#C2011B"
+  secondary_color: "#D1D3D4"
+  city: Radford
+  state: VA
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2515/radford-highlanders
+  espn_id: 2515
+- school: South Carolina Upstate
+  nickname: Spartans
+  abbreviation: SCUP
+  primary_color: "#00703C"
+  secondary_color: "#000000"
+  city: Spartanburg
+  state: SC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2908/south-carolina-upstate-spartans
+  espn_id: 2908
+- school: UNC Asheville
+  nickname: Bulldogs
+  abbreviation: UNCA
+  primary_color: "#003DA5"
+  secondary_color: "#FFFFFF"
+  city: Asheville
+  state: NC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2427/unc-asheville-bulldogs
+  espn_id: 2427
+- school: Winthrop
+  nickname: Eagles
+  abbreviation: WIN
+  primary_color: "#660000"
+  secondary_color: "#F0B323"
+  city: Rock Hill
+  state: SC
+  conference: BSOU
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2737/winthrop-eagles
+  espn_id: 2737
+- school: Illinois
+  nickname: Fighting Illini
+  abbreviation: ILL
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Champaign
+  state: IL
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/356/illinois-fighting-illini
+  espn_id: 356
+- school: Indiana
+  nickname: Hoosiers
+  abbreviation: IU
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Bloomington
+  state: IN
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/84/indiana-hoosiers
+  espn_id: 84
+- school: Iowa
+  nickname: Hawkeyes
+  abbreviation: IOWA
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Iowa City
+  state: IA
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2294/iowa-hawkeyes
+  espn_id: 2294
+- school: Maryland
+  nickname: Terrapins
+  abbreviation: MD
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: College Park
+  state: MD
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/120/maryland-terrapins
+  espn_id: 120
+- school: Michigan State
+  nickname: Spartans
+  abbreviation: MSU
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: East Lansing
+  state: MI
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/127/michigan-state-spartans
+  espn_id: 127
+- school: Michigan
+  nickname: Wolverines
+  abbreviation: MICH
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Ann Arbor
+  state: MI
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/130/michigan-wolverines
+  espn_id: 130
+- school: Minnesota
+  nickname: Golden Gophers
+  abbreviation: MINN
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Minneapolis
+  state: MN
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/135/minnesota-golden-gophers
+  espn_id: 135
+- school: Nebraska
+  nickname: Cornhuskers
+  abbreviation: NEB
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Lincoln
+  state: NE
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/158/nebraska-cornhuskers
+  espn_id: 158
+- school: Northwestern
+  nickname: Wildcats
+  abbreviation: NW
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Evanston
+  state: IL
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/77/northwestern-wildcats
+  espn_id: 77
+- school: Ohio State
+  nickname: Buckeyes
+  abbreviation: OSU
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Columbus
+  state: OH
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/194/ohio-state-buckeyes
+  espn_id: 194
+- school: Penn State
+  nickname: Nittany Lions
+  abbreviation: PSU
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: State College
+  state: PA
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/213/penn-state-nittany-lions
+  espn_id: 213
+- school: Purdue
+  nickname: Boilermakers
+  abbreviation: PUR
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: West Lafayette
+  state: IN
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2509/purdue-boilermakers
+  espn_id: 2509
+- school: Rutgers
+  nickname: Scarlet Knights
+  abbreviation: RUTG
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: New Brunswick
+  state: NJ
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/164/rutgers-scarlet-knights
+  espn_id: 164
+- school: Wisconsin
+  nickname: Badgers
+  abbreviation: WISC
+  primary_color: "#000000"
+  secondary_color: "#000000"
+  city: Madison
+  state: WI
+  conference: B1G
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/275/wisconsin-badgers
+  espn_id: 275
