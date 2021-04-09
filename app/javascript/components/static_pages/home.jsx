@@ -7,7 +7,7 @@ const Home = (props) => {
       <div className="body-container">
         <h1>Welcome to ProphetRatings 2.0!</h1>
         <p>
-          This is a work in progress. So far we have teams and players!
+          This is a work in progress. So far we have teams and players! Now games!
         </p>
       </div>
     );
