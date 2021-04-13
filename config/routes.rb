@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
+  get 'schedule/:date', to: 'games#schedule'
 
   devise_for :users, skip: [:sessions, :registrations]
 
@@ -22,4 +23,9 @@ Rails.application.routes.draw do
   resources :teams, only: [:index, :show] do
     get 'roster', on: :member
   end
+
+  resources :games, only: [:show] do
+    get 'schedule', on: :collection
+  end
+
 end

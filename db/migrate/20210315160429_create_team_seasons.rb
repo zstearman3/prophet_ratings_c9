@@ -29,6 +29,7 @@ class CreateTeamSeasons < ActiveRecord::Migration[6.1]
       t.decimal :normal_three_point_proficiency, scale: 5, precision: 8
       t.decimal :nomral_allowed_three_point_proficiency, scale: 5, precision: 8
       t.decimal :normal_home_court_advantage, scale: 5, precision: 8
+
       t.timestamps null: true
     end
   end

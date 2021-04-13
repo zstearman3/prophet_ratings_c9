@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_23_023618) do
+ActiveRecord::Schema.define(version: 2021_04_13_145103) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -102,6 +102,42 @@ ActiveRecord::Schema.define(version: 2021_03_23_023618) do
     t.string "abbreviation"
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+  end
+
+  create_table "team_games", force: :cascade do |t|
+    t.bigint "team_id"
+    t.bigint "game_id"
+    t.boolean "home_game"
+    t.boolean "neutral_game"
+    t.integer "field_goals_attempted"
+    t.integer "field_goals_made"
+    t.float "field_goal_percentage"
+    t.integer "three_pointers_attempted"
+    t.integer "three_pointers_made"
+    t.float "three_point_percentage"
+    t.integer "free_throws_attempted"
+    t.integer "free_throws_made"
+    t.float "free_throw_percentage"
+    t.integer "rebounds"
+    t.integer "offensive_rebounds"
+    t.integer "defensive_rebounds"
+    t.integer "assists"
+    t.integer "steals"
+    t.integer "blocks"
+    t.integer "turnovers"
+    t.integer "fouls"
+    t.integer "largest_lead"
+    t.decimal "offensive_efficiency", precision: 8, scale: 5
+    t.decimal "defensive_efficiency", precision: 8, scale: 5
+    t.decimal "rebound_rate", precision: 8, scale: 5
+    t.decimal "assist_rate", precision: 8, scale: 5
+    t.decimal "allowed_assist_rate", precision: 8, scale: 5
+    t.decimal "three_point_proficiency", precision: 8, scale: 5
+    t.decimal "allowed_three_point_proficiency", precision: 8, scale: 5
+    t.datetime "created_at", precision: 6
+    t.datetime "updated_at", precision: 6
+    t.index ["game_id"], name: "index_team_games_on_game_id"
+    t.index ["team_id"], name: "index_team_games_on_team_id"
   end
 
   create_table "team_seasons", force: :cascade do |t|
