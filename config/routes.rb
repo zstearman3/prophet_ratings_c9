@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
+  get 'schedule',       to: 'games#schedule'
   get 'schedule/:date', to: 'games#schedule'
 
   devise_for :users, skip: [:sessions, :registrations]
