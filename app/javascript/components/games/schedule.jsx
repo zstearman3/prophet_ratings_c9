@@ -6,7 +6,7 @@ const Schedule = (props) => {
   const date = new Date(props.date);
   const games = props.games;
   const date_string = () => {
-    const day = date.getUTCDay();
+    const day = date.getUTCDate();
     const month = date.getUTCMonth() + 1;
     const year = date.getUTCFullYear();
     return(
