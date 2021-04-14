@@ -7,7 +7,9 @@ class GamesController < ApplicationController
     else
       @date ||= Date.today
     end
-    @games = Game.includes(:home_team, :away_team).where(date: @date)
+    @games = Game.includes(:home_team, :away_team)
+                 .where(date: @date)
+                 .order('date asc')
   end
 
 end
