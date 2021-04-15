@@ -1022,8 +1022,8 @@
 - school: Illinois
   nickname: Fighting Illini
   abbreviation: ILL
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#E84A27"
+  secondary_color: "#13294B"
   city: Champaign
   state: IL
   conference: B1G
@@ -1032,8 +1032,8 @@
 - school: Indiana
   nickname: Hoosiers
   abbreviation: IU
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#990000"
+  secondary_color: "#EEEDEB"
   city: Bloomington
   state: IN
   conference: B1G
@@ -1042,7 +1042,7 @@
 - school: Iowa
   nickname: Hawkeyes
   abbreviation: IOWA
-  primary_color: "#000000"
+  primary_color: "#FFCD00"
   secondary_color: "#000000"
   city: Iowa City
   state: IA
@@ -1052,8 +1052,8 @@
 - school: Maryland
   nickname: Terrapins
   abbreviation: MD
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#E03A3E"
+  secondary_color: "#FFD520"
   city: College Park
   state: MD
   conference: B1G
@@ -1062,8 +1062,8 @@
 - school: Michigan State
   nickname: Spartans
   abbreviation: MSU
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#18453B"
+  secondary_color: "#FFFFFF"
   city: East Lansing
   state: MI
   conference: B1G
@@ -1072,8 +1072,8 @@
 - school: Michigan
   nickname: Wolverines
   abbreviation: MICH
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#00274C"
+  secondary_color: "#FFCB05"
   city: Ann Arbor
   state: MI
   conference: B1G
@@ -1082,8 +1082,8 @@
 - school: Minnesota
   nickname: Golden Gophers
   abbreviation: MINN
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#7A0019"
+  secondary_color: "#FFCC33"
   city: Minneapolis
   state: MN
   conference: B1G
@@ -1092,8 +1092,8 @@
 - school: Nebraska
   nickname: Cornhuskers
   abbreviation: NEB
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#E41C38"
+  secondary_color: "#FDF2D9"
   city: Lincoln
   state: NE
   conference: B1G
@@ -1102,8 +1102,8 @@
 - school: Northwestern
   nickname: Wildcats
   abbreviation: NW
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#4E2A84"
+  secondary_color: "#FFFFFF"
   city: Evanston
   state: IL
   conference: B1G
@@ -1112,8 +1112,8 @@
 - school: Ohio State
   nickname: Buckeyes
   abbreviation: OSU
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#BB0000"
+  secondary_color: "#666666"
   city: Columbus
   state: OH
   conference: B1G
@@ -1122,8 +1122,8 @@
 - school: Penn State
   nickname: Nittany Lions
   abbreviation: PSU
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#041E42"
+  secondary_color: "#FFFFFF"
   city: State College
   state: PA
   conference: B1G
@@ -1132,7 +1132,7 @@
 - school: Purdue
   nickname: Boilermakers
   abbreviation: PUR
-  primary_color: "#000000"
+  primary_color: "#CEB888"
   secondary_color: "#000000"
   city: West Lafayette
   state: IN
@@ -1142,8 +1142,8 @@
 - school: Rutgers
   nickname: Scarlet Knights
   abbreviation: RUTG
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#CC0033"
+  secondary_color: "#5F6A72"
   city: New Brunswick
   state: NJ
   conference: B1G
@@ -1152,10 +1152,120 @@
 - school: Wisconsin
   nickname: Badgers
   abbreviation: WISC
-  primary_color: "#000000"
-  secondary_color: "#000000"
+  primary_color: "#C5050C"
+  secondary_color: "#FFFFFF"
   city: Madison
   state: WI
   conference: B1G
   espn_url: https://www.espn.com/mens-college-basketball/team/_/id/275/wisconsin-badgers
   espn_id: 275
+- school: CSU Bakersfield
+  nickname: Roadrunners
+  abbreviation: CSUB
+  primary_color: "#003594"
+  secondary_color: "#FFC72C"
+  city: Bakersfield
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2934/csu-bakersfield-roadrunners
+  espn_id: 2934
+- school: CSU Fullerton
+  nickname: Titans
+  abbreviation: CSUF
+  primary_color: "#00274C"
+  secondary_color: "#DC8218"
+  city: Fullerton
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2239/csu-fullerton-titans
+  espn_id: 2239
+- school: CSU Northridge
+  nickname: Matadors
+  abbreviation: CSUN
+  primary_color: "#CE1126"
+  secondary_color: "#D1CEC6"
+  city: Los Angeles
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2463/csu-northridge-matadors
+  espn_id: 2463
+- school: Cal Poly
+  nickname: Mustangs
+  abbreviation: CP
+  primary_color: "#003831"
+  secondary_color: "#FFE395"
+  city: San Luis Obispo
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/13/cal-poly-mustangs
+  espn_id: 13
+- school: Hawai'i
+  nickname: Rainbow Warriors
+  abbreviation: HAW
+  primary_color: "#024731"
+  secondary_color: "#C8C8C8"
+  city: Honolulu
+  state: HI
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/62/hawaii-rainbow-warriors
+  espn_id: 62
+- school: Long Beach State
+  nickname: Beach
+  abbreviation: LBSU
+  primary_color: "#FFC72A"
+  secondary_color: "#000000"
+  city: Long Beach
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/299/long-beach-state-beach
+  espn_id: 299
+- school: UC Davis
+  nickname: Aggies
+  abbreviation: UCD
+  primary_color: "#002855"
+  secondary_color: "#B3A369"
+  city: Davis
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/302/uc-davis-aggies
+  espn_id: 302
+- school: UC Irvine
+  nickname: Anteaters
+  abbreviation: UCI
+  primary_color: "#0C2340"
+  secondary_color: "#FFC72C"
+  city: Irvine
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/300/uc-irvine-anteaters
+  espn_id: 300
+- school: UC Riverside
+  nickname: Highlanders
+  abbreviation: UCR
+  primary_color: "#2D6CC0"
+  secondary_color: "#003066"
+  city: Riverside
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/27/uc-riverside-highlanders
+  espn_id: 27
+- school: UC San Diego
+  nickname: Tritons
+  abbreviation: UCSD
+  primary_color: "#192847"
+  secondary_color: "#FBCB07"
+  city: San Diego
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/28/uc-san-diego-tritons
+  espn_id: 28
+- school: UC Santa Barbara
+  nickname: Gauchos
+  abbreviation: UCSB
+  primary_color: "#003660"
+  secondary_color: "#FEBC11"
+  city: Santa Barbara
+  state: CA
+  conference: BWC
+  espn_url: https://www.espn.com/mens-college-basketball/team/_/id/2540/uc-santa-barbara-gauchos
+  espn_id: 2540
