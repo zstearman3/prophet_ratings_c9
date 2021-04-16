@@ -44,4 +44,4 @@ yarn-debug.log*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-/http-stash
+/http-stash/*
