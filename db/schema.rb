@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_29_011346) do
+ActiveRecord::Schema.define(version: 2021_10_29_192304) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -140,6 +140,10 @@ ActiveRecord::Schema.define(version: 2021_10_29_011346) do
     t.integer "game_espn_id"
     t.integer "technical_fouls"
     t.integer "flagrant_fouls"
+    t.integer "points"
+    t.integer "points_allowed"
+    t.float "possessions"
+    t.index ["game_espn_id", "team_id"], name: "index_team_games_on_game_espn_id_and_team_id", unique: true
     t.index ["game_id"], name: "index_team_games_on_game_id"
     t.index ["team_id"], name: "index_team_games_on_team_id"
   end
