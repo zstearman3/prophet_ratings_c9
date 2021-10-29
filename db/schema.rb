@@ -143,7 +143,7 @@ ActiveRecord::Schema.define(version: 2021_10_29_192304) do
     t.integer "points"
     t.integer "points_allowed"
     t.float "possessions"
-    t.index ["game_espn_id", "team_id"], name: "index_team_games_on_game_espn_id_and_team_id", unique: true
+    t.index ["game_id", "team_id"], name: "index_team_games_on_game_id_and_team_id", unique: true
     t.index ["game_id"], name: "index_team_games_on_game_id"
     t.index ["team_id"], name: "index_team_games_on_team_id"
   end
