@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_13_145103) do
+ActiveRecord::Schema.define(version: 2021_11_02_164140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -129,13 +129,22 @@ ActiveRecord::Schema.define(version: 2021_04_13_145103) do
     t.integer "largest_lead"
     t.decimal "offensive_efficiency", precision: 8, scale: 5
     t.decimal "defensive_efficiency", precision: 8, scale: 5
-    t.decimal "rebound_rate", precision: 8, scale: 5
     t.decimal "assist_rate", precision: 8, scale: 5
     t.decimal "allowed_assist_rate", precision: 8, scale: 5
     t.decimal "three_point_proficiency", precision: 8, scale: 5
     t.decimal "allowed_three_point_proficiency", precision: 8, scale: 5
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+    t.integer "opponent_team_game_id"
+    t.integer "game_espn_id"
+    t.integer "technical_fouls"
+    t.integer "flagrant_fouls"
+    t.integer "points"
+    t.integer "points_allowed"
+    t.float "possessions"
+    t.decimal "offensive_rebound_rate", precision: 8, scale: 5
+    t.decimal "defensive_rebound_rate", precision: 8, scale: 5
+    t.index ["game_id", "team_id"], name: "index_team_games_on_game_id_and_team_id", unique: true
     t.index ["game_id"], name: "index_team_games_on_game_id"
     t.index ["team_id"], name: "index_team_games_on_team_id"
   end
